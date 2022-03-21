@@ -1,5 +1,22 @@
-package atividade3felipe;
+package teste;
 
-public class NoLista {
-	private info t;
+public class NoLista <T> {
+	private T info;
+	private NoLista<T> proximo;
+
+	public NoLista<T> getProximo() {
+		return proximo;
+	}
+
+	public void setProximo(NoLista<T> proximo) {
+		this.proximo = proximo;
+	}
+
+	public T getInfo() {
+		return info;
+	}
+
+	public void setInfo(T info) {
+		this.info = info;
+	}
 }
